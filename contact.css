@@ -20,7 +20,7 @@
 
       body /* Tag Selector*/
       {
-        font-family: "Poppins",sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
       }
 
       .navbar /* Class Selector*/
@@ -56,7 +56,22 @@
       {
         color:#555;
       }
+      
+      .address {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #000;
+        font-style: italic;
+      }
 
+      .address a{
+        color:hsl(16, 95%, 51%);
+      }
+
+      .add {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: normal;        
+      }
+ 
       .container
       {
         max-width:1300px;
