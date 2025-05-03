@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyCart</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<link rel="stylesheet" href="index.css"/>
+<link rel="icon" href="images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+<div class="header">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="RedStore" width="125px" /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="product.html" class="nav-link">Products</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="account.html" class="nav-link">Login/SignUp</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="images/cart.png" alt="" width="30px" height="30px" /></a>
+      <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon"  onclick="menutoggle()" />
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h1>
+          Elevate Your Fitness, <br />
+          Redefine Your Style!
+        </h1>
+        <p>
+          Empower your dreams, click by click. Success is just a checkout away.<br />Your hustle today builds your empire tomorrow.
+        </p>
+        <a href="product.html" rel="noopener noreferrer" class="btn">Explore Now &#8594;</a>
+      </div>
+      <div class="col-2">
+        <img src="https://www.pngmart.com/files/22/Football-Player-PNG-Isolated-Transparent-HD-Photo.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured categories -->
+<div class="categories">
+  <div class="small-container">
+    <h2 class="title">Categories</h2>
+    <div class="row">
+      <div class="col-3">
+        <img src="images/jeans.jpg" alt="" />
+        <h4>upto 50% off on<span> Jeans</span></h4>
+      </div>
+        
+      <div class="col-3">
+        <img src="images/footware.jpg" alt="" />
+        <h4>upto 80% off on<span> Footware</span></h4>
+      </div>
+            
+      <div class="col-3">
+        <img src="images/hoodies.jpg" alt="" />
+        <h4>upto 60% off on<span> Hoodies</span></h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured products -->
+<div class="small-container">
+  <h2 class="title">Featured Products</h2>
+  <div class="row">
+    <div class="col-4">
+      <a href="product_details.html"><img src="images/Red Printed T-shirt.jpg" alt="" /></a>
+      <a href="product_details.html">
+        <h4>Red Printed T-shirt</h4>
+      </a>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <del>₹1999.00</del>
+      <p>20% off<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹1599.00</span></p>
+    </div>
+
+    <div class="col-4">
+      <img src="images/HRX Sport Shoe.jpg" alt="" />
+      <h4>HRX Sport Shoe</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <del>₹4499.00</del>
+      <p>23% off<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹3464.00</span></p>
+    </div>
+
+    <div class="col-4">
+      <img src="images/BENETTON Track-Pant.jpg" alt="" />
+      <h4>ADIDAS Track-Pant</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <del>₹999.00</del>
+      <p>25% off<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹750.00</span></p>
+    </div>
+
+    <div class="col-4">
+      <img src="images/Blue Puma T-Shirt.jpg" alt="" />
+      <h4>Blue Puma T-Shirt</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <del>₹999.00</del>
+      <p>15% off<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹849.00</span></p>
+    </div>
+  </div>
+  <h2 class="title">Latest Products</h2>
+  <div class="row">
+    <div class="col-4">
+      <img src="images/HRX Casual Shoe.jpg" alt="" />
+      <h4>HRX Casual Shoe</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <del>₹3299.00</del>
+      <p>10% off<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹2969.00</span></p>
+    </div>
+
+    <div class="col-4">
+      <img src="images/Puma T-shirt.jpg" alt="" />
+      <h4>Puma T-shirt</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <del>₹699.00</del>
+      <p>13% off<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹608.00</span></p>
+    </div>
+
+    <div class="col-4">
+      <img src="images/HRX socks.jpg" alt="" />
+      <h4>HRX socks</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <del>₹299.00</del>
+      <p>50% off<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹149.00</span></p>
+    </div>
+
+    <div class="col-4">
+      <img src="images/Fossile Analog Watch.jpg" alt="" />
+      <h4>Fossile Analog Watch</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <del>₹1899.00</del>
+      <p>20% off<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹1519.00</span></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <img src="images/Roadster Analog Watch.jpg" alt="" />
+      <h4>Roadster Analog Watch</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <del>₹1599.00</del>
+      <p>60% off<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹639.00</span></p>
+    </div>
+
+    <div class="col-4">
+      <img src="images/SPARK Shoe.jpg" alt="" />
+      <h4>SPARK Shoe</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <del>₹2999.00</del>
+      <p>50% off<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹1499.00</span></p>
+    </div>
+
+    <div class="col-4">
+      <img src="images/Roadster Running Shoe.jpg" alt="" />
+      <h4>Roadster Running Shoe</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <del>₹800.00</del>
+      <p>40% off<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹480.00</span></p>
+    </div>
+
+    <div class="col-4">
+      <img src="images/Nike Track-Pant.jpg" alt="" />
+      <h4>Nike Track-Pant</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <del>1799.00</del>
+      <p>60% off<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹882.00</span></p>
+    </div>
+  </div>
+</div>
+<!-- offer -->
+<div class="offer">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-2">
+        <img src="images/Smart_Band_4.png" alt="" class="offer-img" />
+      </div>
+      <div class="col-2">
+        <p>Exclusively Available on RedStore</p>
+        <h1>Smart Band 4</h1>
+        <small>The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3)
+          AMOLED color full-touch display with adjustable brightness, so
+          everything is clear as can be.</small>
+        <br />
+        <a href="#" class="btn">Buy Now &#8594;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonial -->
+<h2 class="title">Customer Reviews</h2>
+<div class="testimonial">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-3">
+        <i class="fas fa-quote-left"></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Perferendis, quae molestias error id est voluptatibus quos amet
+          numquam aspernatur nam cumque ullam? Veritatis eveniet et, maxime
+          eaque soluta quas modi.
+        </p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <img src="images/testimonials -1.jpeg" alt="" />
+        <h3>Marta W.</h3>
+      </div>
+
+      <div class="col-3">
+        <i class="fas fa-quote-left"></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Perferendis, quae molestias error id est voluptatibus quos amet
+          numquam aspernatur nam cumque ullam? Veritatis eveniet et, maxime
+          eaque soluta quas modi.
+        </p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <img src="images/testimonials - 2.jpeg" alt="" />
+        <h3>Rula P.</h3>
+      </div>
+
+      <div class="col-3">
+        <i class="fas fa-quote-left"></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Perferendis, quae molestias error id est voluptatibus quos amet
+          numquam aspernatur nam cumque ullam? Veritatis eveniet et, maxime
+          eaque soluta quas modi.
+        </p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <img src="images/testimonials - 3.jpeg" alt="" />
+        <h3>Vika Z.</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- brands -->
+<h2 class="title">Top Brands</h2>
+<div class="brands">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-5">
+        <img src="images/puma.png" width="70px" height="70px" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="images/reebok.png" width="70px" height="70px" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="images/gucci.png" width="65px" height="65px" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="images/peterenland.png" width="200px" height="200px" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="images/nike.png" width="150px" height="150px" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- Footer -->
+<div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and iso mobile phone.</p>
+          <div class="app-logo">
+            <a href=" "><img src="images/google play store.png" alt="" /></a>
+            <a href=" "><img src="images/apple store.png" alt="" /></a>
+          </div>
+        </div>
+  
+        <div class="footer-col-2">
+          <img src="images/logo.png" alt="" />
+          <p>
+            Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+            Sports Accessible to the Many.
+          </p>
+        </div>
+  
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul class="Fotter-Links">
+            <a href="about.html" class="nav-link"><li>Coupons</li></a>
+            <a href="about.html" class="nav-link"><li>BlogPost</li></a>
+            <a href="about.html" class="nav-link"><li>Return polacy</li></a>
+            <a href="about.html" class="nav-link"><li>Join Affiliate</li></a>
+          </ul>
+        </div>
+  
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <a href="https://www.facebook.com/" class="nav-link"><li>Facebook</li></a>
+            <a href="https://twitter.com/login" class="nav-link"><li>Twitter</li></a>
+            <a href="https://www.instagram.com/accounts/login/" class="nav-link"><li>Instagram</li></a>
+            <a href="https://www.youtube.com" class="nav-link"><li>YouTube</li></a>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">&copy; Developed By S SARATCHANDRA RAJU</p>
+    </div>
+  </div>
+
+<!-- js for toggle menu -->
+<script src="index.js"></script>
+    </body>
+</html>
