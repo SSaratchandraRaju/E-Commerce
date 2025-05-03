@@ -405,7 +405,8 @@ ul {
 }
 
 .menu-icon {
-  width: 28px;
+  width: 50px;
+  height: 50px;
   margin-left: 20px;
   display: none;
 }
@@ -413,30 +414,54 @@ ul {
 /* media query for menu */
 
 @media only screen and (max-width: 800px) {
+  /* The navigation container */
+  nav {
+    position: relative;
+  }
+
+  /* The unordered list that holds the menu items */
   nav ul {
     position: absolute;
     top: 70px;
     left: 0;
-    background: #333;
+    background: none; /* Remove the background */
     width: 100%;
     overflow: hidden;
-    transition: max-height 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    max-height: 0; /* Initially hidden */
+    transition: max-height 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
   }
 
+  /* The list items inside the unordered list */
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* The anchor links inside each list item */
   nav ul li a {
     color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
   }
+
+  /* The menu icon, which will trigger the mobile menu */
   .menu-icon {
     display: block;
     cursor: pointer;
+    padding: 10px;
+    color: #333;  /* Change icon color */
+    font-size: 30px;
+    text-align: center;
+    background: none;  /* Remove the background from the menu icon */
   }
 }
+
 
 /* all products page */
 
@@ -673,9 +698,58 @@ form a {
 /* media query for less than 600 screen size */
 
 @media only screen and (max-width: 600px) {
+  /* The navigation container */
+  nav {
+    position: relative;
+  }
+
+  /* The unordered list that holds the menu items */
+  nav ul {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background: none; 
+    width: 100%;
+    overflow: hidden;
+    max-height: 0; 
+    transition: max-height 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* The anchor links inside each list item */
+  nav ul li a {
+    color: #333; 
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+  }
+
+  /* The menu icon, which will trigger the mobile menu */
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    color: #333;  
+    font-size: 30px;
+    text-align: center;
+    background: none;  
+  }
+
+  /* Additional styles for layout */
   .row {
     text-align: center;
   }
+
   .col-2,
   .col-3,
   .col-4 {
@@ -689,14 +763,17 @@ form a {
   .single-product .col-2 {
     padding: 20px 0;
   }
+
   .single-product h1 {
     font-size: 26px;
     line-height: 32px;
   }
+
   .cart-info p {
     display: none;
   }
 }
+
 .addto{
         border: 1.5px solid #ff4c3b;
     font-size: 12px;
